@@ -10,7 +10,6 @@ body {
     display:flex;
     justify-content: space-between;
 }
-
 .container_left {
     background-color: #FFF;
     width: 20%;
@@ -82,8 +81,7 @@ a {
     height: 232px;
     width: 192px;
     margin-top: 100px;
-    margin-bottom: 100px;
-    
+    margin-bottom: 100px;  
 }
 .left_file img {
     width: 85px;
@@ -140,7 +138,6 @@ input {
     margin-left: 10px;
     outline: 0;
 }
-
 .center_menu {
     width: 100%;
     height: 100px;
@@ -199,15 +196,14 @@ input {
 .banner_top_left_l {
     font-size: 18px;
     margin-top: 10px;
-    opacity: 0.8;
+    color: #E1E7FA;
     font-weight: 500;
 }
 .banner_top_right {
-    opacity: 0.8;
+    color: #E1E7FA;
     margin-top: 5px;
     font-size: 16px;
 }
-
 .banner_bottom {
     display: flex;
     justify-content: space-between;
@@ -233,8 +229,7 @@ input {
     width: 100%;
     display:flex;
     justify-content: space-between;
-    margin-top: 40px;
-    
+    margin-top: 40px;  
 }
 .center_banner_left {
     display: flex;
@@ -285,7 +280,6 @@ input {
     color: #011F3B;
     margin-right: 10px;
 }
-
 .right_graf {
     display: flex;
     flex-direction: column;
@@ -330,12 +324,11 @@ input {
     background-color: #EEF2FD;   
 }
 .violet_grafic {
-    width: 80px;
+    width: 60px;
     height: 8px;
     border-radius: 21px;
     background-color: #5E81F4;
 }
-
 .green_success_bg {
     background-color: #D5F5FB;
 }
@@ -368,4 +361,255 @@ input {
     justify-content: center;
     width: 90%;
     height: 204px;
+}
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+.mm_line{
+    height: 3px;
+    background-color: #5E81F4;
+}
+.container_mobile {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+    align-items: center;
+    margin-top: 80px;
+    background-color: #F5F5FB;
+}
+
+@media (min-width: 768px) and (max-width: 1150px) {
+    .logo {
+        margin: 0px;
+    }
+    .left_logo {
+        width: 40px;
+        height: 40px;
+    }
+    .logo h1 {
+        margin-left: 3px;
+        font-size: 17px;
+    }
+    button {
+        padding-left: 25px;
+        width: auto;
+        font-size: 12px;
+        padding-right: 25px;
+    }
+    .left_menu {
+        font-size: 12px;
+        width: 120px;
+        padding-left: 30px;
+        align-items:flex-start
+    }
+    .left_file {
+        width: 80%;
+        height: 170px;
+        margin-bottom: 70px;
+    }
+    .left_file img {
+        width: 60px;
+        height: 70px;
+    }
+    .left_file_text {
+        width: 90px;
+        font-size: 10px;
+    }
+    .left_button {
+        width: 90px;
+    }
+    .container_center { 
+    padding-right: 16px;
+    }
+    .center_header_search {
+        height: 40px;
+    }
+    .center_all {
+        font-size: 20px;
+    }
+    .center_text_fav {
+        font-size: 13px;
+    }
+    .banner_top {
+        flex-direction: column;
+    }
+    .banner_top_left_ux {
+        font-size: 16px;
+    }
+    .center_banner_left,
+    .center_banner_right {
+        height: 265px;
+    }
+    .right_top {
+        flex-direction: column;
+        width: auto;
+    }
+    .right_top img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .right_top_text {
+        font-size: 15px;
+        margin-right: 0px;
+        margin-top: 5px;
+    }
+    .right_graf {
+        margin-right: 10px;
+    }
+    .violet_icons_bg {
+        width: 40px;
+        height: 40px;
+    }
+    .graf_violet {
+        width: auto;
+        height: auto;
+    }
+    .violet_text {
+        margin: 0px 0px 0px 3px;
+    }
+    .violet_grafic_bg {
+        margin-top: 7px;
+    }
+    .right_photo img {
+        height: auto;
+    }
+    .container_mobile {
+        display:none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .container_center,
+    .container_right {
+        width: 100%;
+    }
+    .center_menu,
+    .center_header,
+    .center_banner,
+    .center_bottom {
+        width: 90%;
+    }
+    .container_left {
+        display: none;
+    }
+    .logo {
+        margin: 0px;
+    }
+    .left_logo {
+        width: 40px;
+        height: 40px;
+    }
+    .logo h1 {
+        margin-left: 3px;
+        font-size: 17px;
+    }
+    button {
+        padding-left: 25px;
+        width: auto;
+        font-size: 12px;
+        padding-right: 25px;
+    }
+    .left_menu {
+        font-size: 12px;
+        width: 120px;
+        padding-left: 30px;
+        align-items:flex-start
+    }
+    .left_file {
+        width: 80%;
+        height: 170px;
+        margin-bottom: 70px;
+    }
+    .left_file img {
+        width: 60px;
+        height: 70px;
+    }
+    .left_file_text {
+        width: 90px;
+        font-size: 10px;
+    }
+    .left_button {
+        width: 90px;
+    }
+    .container_center { 
+        padding: 0px;
+    }
+    .center_header_search {
+        height: 40px;
+    }
+    .center_all {
+        font-size: 20px;
+        width: 43%;
+    }
+    .center_text {
+        width: 55%;
+    }
+    .center_text_fav {
+        font-size: 13px;
+        margin: 0px 2px;
+    }
+    .banner_top {
+        flex-direction: column;
+    }
+    .banner_top_left_ux {
+        font-size: 16px;
+    }
+    .center_banner_left,
+    .center_banner_right {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .center_bottom {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right_top {
+        width: auto;
+    }
+    .right_top img {
+        margin:0px 10px;
+    }
+    .right_top_text {
+        font-size: 15px;
+        margin-right: 0px;
+        margin-top: 5px;
+    }
+    .right_graf {
+        margin-right: 10px;
+    }
+    .violet_icons_bg {
+        width: 40px;
+        height: 40px;
+    }
+    .graf_violet {
+        width: auto;
+        height: auto;
+    }
+    .violet_text {
+        margin: 0px 0px 0px 3px;
+    }
+    .violet_grafic_bg {
+        margin-top: 7px;
+    }
+    .right_photo img {
+        height: auto;
+        width: 70%;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .container_mobile {
+        display:none;
+        position: absolute;
+    }
 }

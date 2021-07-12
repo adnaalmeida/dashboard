@@ -11,9 +11,61 @@
     <link href="assets/icons/css/fontawesome.css" rel="stylesheet">
     <script src="assets/icons/js/all.js"></script>
     <script src="assets/icons/js/fontawesome.js"></script>
+
+
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector(".menuMobile").addEventListener("click",function (){
+                if(document.querySelector(".container_mobile").style.display == 'flex') {
+                    document.querySelector(".container_mobile").style.display = 'none';
+                } else {
+                    document.querySelector(".container_mobile").style.display = 'flex';
+                }
+            });
+        };
+        </script>
 </head>
 <body>
     <div class="container">
+        <section class="container_mobile">
+            <div class="logo">
+                <div class="left_logo">
+                    <img src="assets/images/logo.png"/>
+                </div>
+                <h1>Ohara</h1>
+            </div>
+            
+            <div class="left_menu">
+                <a href="#">
+                    <i class="fas fa-border-all"></i> <b>Dashboard</b>
+                </a>
+                <a href="#">
+                    <i class="fas fa-th-large"></i> <b>All courses</b>
+                </a>
+                <a href="#">
+                    <i class="far fa-folder"></i> <b>Resources</b>
+                </a>
+                <a href="#">
+                    <i class="far fa-user"></i> <b>Friends</b>
+                </a>
+                <a href="#">
+                    <i class="far fa-comment-alt"></i> <b>Chats</b>
+                </a>
+                <a href="#">
+                    <i class="fas fa-cog"></i> <b>Settings</b>
+                </a>
+            </div>
+
+            <button onclick="alert('oi')">Join a course</button>
+
+            <div class="left_file">
+                <img src="assets/images/file.png"/>
+                <div class="left_file_text">Upgrade to for more resources </div>
+                <button class="left_button">Upgrade</button>
+            </div>
+        </section>
+
+
         <section class="container_left">
             <div class="logo">
                 <div class="left_logo">
@@ -52,6 +104,11 @@
 
         <section class="container_center">
             <div class="center_header">
+                <div class="menuMobile">
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                </div>
                 <div class="center_header_search">
                     <i class="fas fa-search"></i>
                     <input type="search" name="q" value="Search" autocomplete="off"/>
@@ -133,8 +190,9 @@
         <section class="container_right">
             <div class="right_top">
                 <img src="assets/images/img8.png"/>
-                <div class="right_top_text">Alexa Rogue</div>
-                <i class="fas fa-angle-down"></i>
+                <div class="right_top_text">Alexa Rogue 
+                    <i class="fas fa-angle-down"></i>
+                </div>
             </div>
             <div class="right_graf"> Progress
                 <div class="graf_violet">
@@ -210,7 +268,6 @@
             </div>
         </section>
     </div>
-    
 
 <script>
     let input = document.querySelector("input");
